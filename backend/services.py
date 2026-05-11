@@ -47,6 +47,7 @@ You must return ONLY a JSON object with the following structure, with no extra t
         ],
         model="llama-3.3-70b-versatile", # Using LLaMA 3 as requested in theory
         temperature=0.2, # Low temperature for more deterministic output
+        response_format={"type": "json_object"},
     )
 
     result_text = response.choices[0].message.content
