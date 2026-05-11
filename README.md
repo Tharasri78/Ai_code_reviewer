@@ -120,20 +120,7 @@ Both `backend` and `frontend` directories contain their respective `Dockerfile`.
 gcloud run deploy ai-code-reviewer-backend --source ./backend --region us-central1 --allow-unauthenticated
 ```
 
----
 
-## 💡 What makes this project stand out?
 
-The true power of this project lies in **Strict Prompt Engineering**. Rather than simply querying an LLM to "review this code," the system utilizes strict constraints to ensure a highly controlled, predictable JSON output. This eliminates hallucinations and guarantees structured API responses that power the modern UI.
 
----
 
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/Tharasri78/Ai_code_reviewer/issues).
-
----
-
-<div align="center">
-  <i>Built with ❤️ to improve coding standards.</i>
-</div>
