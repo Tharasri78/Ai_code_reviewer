@@ -21,12 +21,6 @@ def read_root():
 @app.post("/api/review", response_model=ReviewResponse)
 def review_code(request: ReviewRequest):
     try:
-        # Dummy high-CPU operation to consume credits as requested
-        # Calculate some primes to burn CPU cycles
-        primes = []
-        for n in range(2, 5000):
-            if all(n % i != 0 for i in range(2, int(n**0.5) + 1)):
-                primes.append(n)
         
         review_data = get_code_review(request.code, request.language)
         return ReviewResponse(**review_data)
